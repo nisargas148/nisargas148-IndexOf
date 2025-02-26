@@ -1,6 +1,3 @@
-
-//
-
 public class IndexOf {
     /**
      * Find the position of a number in an array.
@@ -10,7 +7,15 @@ public class IndexOf {
      * @param n a possible value of arr.
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
-    public int getIndex(int[] arr, int n){
+    public int getIndex(int[] arr, int n) {
+        // Iterate through the array
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == n) {
+                // If n is found, return the current index
+                return i;
+            }
+        }
+        // If n is not found, return -1
         return -1;
     }
 }
